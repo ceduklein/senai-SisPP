@@ -1,0 +1,16 @@
+.card-body p {
+  text-align: justify;
+}
+
+.card-body h4 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.card-body ul {
+  margin: 10px 25px 5px 25px;
+}
+
+.card-body ul li {
+  margin-bottom: 5px;
+}

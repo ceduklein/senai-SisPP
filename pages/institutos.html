@@ -31,11 +31,56 @@
             <li><a href="./pesquisas.html">Listar</a></li>
           </ul>
         </li>
-        <li><a href="#" id="nav-last-item">Equipe</a></li>
+        <li><a onclick="openModal('div-modal')" id="nav-last-item">Equipe</a></li>
     </ul>
   </nav>
 
-  <h1>Lista de Institutos</h1>
+  <div class="card">
+    <div class="card-header">
 
+    </div>
+    <div class="card-body">
+
+    </div>
+    <div class="card-footer">
+      
+    </div>
+  </div>
+
+  <div id="div-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Equipe 07</h2>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>
+            <a href="https://github.com/andredcunha?tab=repositories" target="_blank">
+              <i class="fa fa-github"></i>André Cunha
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/ceduklein?tab=repositories" target="_blank">
+              <i class="fa fa-github"></i>Carlos Klein
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/fhkwmk?tab=repositories" target="_blank">
+              <i class="fa fa-github"></i>Fabiano Henrique
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" onclick="closeModal('div-modal')">Fechar</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <h3>Equipe 7 - SisPP - Sistema de Pesquisas Presidenciais</h3>
+  </footer>
+
+  <script src="../script/global.js"></script>
 </body>
 </html>

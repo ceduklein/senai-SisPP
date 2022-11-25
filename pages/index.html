@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>SisPP</title>
 </head>
 <body>
@@ -31,11 +33,66 @@
             <li><a href="./pesquisas.html">Listar</a></li>
           </ul>
         </li>
-        <li><a href="#" id="nav-last-item">Equipe</a></li>
+        <li><a onclick="openModal('div-modal')" id="nav-last-item">Equipe</a></li>
     </ul>
   </nav>
 
-  <h1>Página Principal</h1>
+  <div class="card">
+    <div class="card-header">
+      <h2>Escopo do Projeto</h2>
+    </div>
+    <div class="card-body">
+      <p>
+        O ambiente eleitoral é um campo fértil para se enveredar por análises, monitoramentos, comparações e notícias. Muitas notícias! Verdadeiras e Falsas! Estes expedientes se estabelecem como importantes elementos direcionadores para o processo de formação da opinião política do eleitor. Todavia, nem tudo que é veiculado pode ser observado como verídico e o eleitor, muitas vezes, não tem a correta noção dessas dimensões. Ora por não ter acesso a diferentes fontes de informação, ora por não ter competência para sintetizar informações de diferentes fontes e construir entendimento de forma precisa. Nesse contexto, o eleitor carece de assistência, todavia, o ambiente eleitoral, por si, não oferece respaldo. Observa-se, por esta breve análise e contextualização, que a questão eleitoral oferece inúmeras possibilidades de desenvolvimentos de aplicações, as quais vão ao encontro de demandas que surgem para esclarecimento e entendimento do próprio processo, por parte dos cidadãos.
+      </p>
+      <h4>Objetivo Geral</h3>
+      <p>Desenvolvimento de software para acompanhamento do desempenho de candidatos durante a corrida eleitoral.</p>
+      <ul>
+        <li>possibilitar o acompanhamento dos candidatos à presidente da república durante o processo eleitoral;</li>
+        <li>possibilitar o acompanhamento das pesquisas eleitorais oficiais por data e por candidato;</li>
+        <li>possibilitar a pesquisa do desempenho de um candidato em uma data específica;</li>
+        <li>possibilitar a pesquisa do desempenho de um candidato em um intervalo de datas.</li>
+      </ul>
+    </div>
+    <div class="card-footer">
 
+    </div>
+  </div>
+
+  <div id="div-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Equipe 07</h2>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>
+            <a href="https://github.com/andredcunha?tab=repositories" target="_blank">
+              <i class="fa fa-github"></i>André Cunha
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/ceduklein?tab=repositories" target="_blank">
+              <i class="fa fa-github"></i>Carlos Klein
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/fhkwmk?tab=repositories" target="_blank">
+              <i class="fa fa-github"></i>Fabiano Henrique
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" onclick="closeModal('div-modal')">Fechar</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <h3>Equipe 7 - SisPP - Sistema de Pesquisas Presidenciais</h3>
+  </footer>
+
+  <script src="../script/global.js"></script>
 </body>
 </html>
