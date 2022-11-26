@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>SisPP</title>
 </head>
 <body>
@@ -37,13 +38,119 @@
 
   <div class="card">
     <div class="card-header">
-
+      <h2>Cadastrar Pesquisa</h2>
     </div>
+
     <div class="card-body">
+      <form action="#">
+        <fieldset class="group">
+          <div class="lbl-input">
+            <label for="instituto">Instituto</label>
+            <select name="instituto" id="instituto" style="width: 45em;">
+              <option value="">--</option>
+              <option value="Instituto 1">Instituto 1</option>
+              <option value="Instituto 2">Instituto 2</option>
+              <option value="Instituto 3">Instituto 3</option>
+              <option value="Instituto 4">Instituto 4</option>
+            </select>            
+          </div>
+          <div class="lbl-input">
+            <label for="data">Data da Pesquisa</label>
+            <input type="date" name="data" id="data" style="width: 10em;">
+          </div>
+        </fieldset>
 
+        <fieldset class="group">
+          <div class="lbl-input">
+            <label for="total">Total de Entrevistados</label>
+            <input type="text" name="total" id="total" style="width: 15em;">
+          </div>
+          <div class="lbl-input">
+            <label for="regiao">Região</label>
+            <select name="regiao" id="regiao" style="width: 29em;">
+              <option value="">--</option>
+              <option value="Centro-Oeste">Centro-Oeste</option>
+              <option value="Nordeste">Nordeste</option>
+              <option value="Norte">Norte</option>
+              <option value="Sudeste">Sudeste</option>
+              <option value="Sul">Sul</option>
+            </select>            
+          </div>
+          <div class="lbl-input">
+            <label for="uf">UF:</label>
+            <select name="estado" id="estado" style="width: 10em;">
+              <option value="">--</option>
+              <option value="AC">AC</option>
+              <option value="AL">AL</option>
+              <option value="AP">AP</option>
+              <option value="AM">AM</option>
+              <option value="BA">BA</option>
+              <option value="CE">CE</option>
+              <option value="DF">DF</option>
+              <option value="ES">ES</option>
+              <option value="GO">GO</option>
+              <option value="MA">MA</option>
+              <option value="MT">MT</option>
+              <option value="MS">MS</option>
+              <option value="MG">MG</option>
+              <option value="PA">PA</option>
+              <option value="PB">PB</option>
+              <option value="PR">PR</option>
+              <option value="PE">PE</option>
+              <option value="PI">PI</option>
+              <option value="RJ">RJ</option>
+              <option value="RN">RN</option>
+              <option value="RS">RS</option>
+              <option value="RO">RO</option>
+              <option value="RR">RR</option>
+              <option value="SC">SC</option>
+              <option value="SE">SE</option>
+              <option value="SP">SP</option>
+              <option value="TO">TO</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <fieldset class="group">
+          <div class="lbl-input">
+            <label for="brancos">Votos Brancos</label>
+            <input type="text" name="brancos" id="brancos" style="width: 18em;">
+          </div>
+          <div class="lbl-input">
+            <label for="nulos">Votos Nulos</label>
+            <input type="text" name="nulos" id="nulos" style="width: 18em;">
+          </div>
+          <div class="lbl-input">
+            <label for="indecisos">Indecisos</label>
+            <input type="text" name="indecisos" id="indecisos" style="width: 18em;">
+          </div>
+        </fieldset>
+
+        <fieldset class="group">
+          <div class="lbl-input">
+            <label for="candidato1">Candidato 1</label>
+            <input type="text" name="candidato1" id="candidato1" style="width: 13em;">
+          </div>
+          <div class="lbl-input">
+            <label for="candidato2">Candidato 2</label>
+            <input type="text" name="candidato2" id="candidato2" style="width: 13em;">
+          </div>
+          <div class="lbl-input">
+            <label for="candidadto3">Candidato 3</label>
+            <input type="text" name="candidadto3" id="candidadto3" style="width: 13em;">
+          </div>
+          <div class="lbl-input">
+            <label for="candidato4">Candidato 4</label>
+            <input type="text" name="candidato4" id="candidato4" style="width: 14em;">
+          </div>
+        </fieldset>
+        
+        <button class="btn">Salvar</button>
+      </form>
     </div>
+
     <div class="card-footer">
-      
+
     </div>
   </div>
 
