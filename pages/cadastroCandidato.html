@@ -38,10 +38,40 @@
 
   <div class="card">
     <div class="card-header">
-      <h2>Candidatos Cadastrados</h2>
+      <h2>Candidato Exemplo</h2>
     </div>
+    
     <div class="card-body">
-      
+      <form action="#">
+        <fieldset class="group">
+          <div class="lbl-input">
+            <label for="id">Id</label>
+            <input type="text" name="id" id="id" style="width: 7em;" value="00421" disabled>
+          </div>
+          <div class="lbl-input">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" style="width: 44em;" value="Candidato 1">
+          </div>
+        </fieldset>
+        <fieldset class="group">
+          <div class="lbl-input">
+            <label for="sigla">Sigla Partido:</label>
+            <input type="text" name="sigla" id="sigla" style="width: 20em;" value="ABC">
+          </div>
+          <div class="lbl-input">
+            <label for="numero">Número:</label>
+            <input type="text" name="numero" id="numero" style="width: 20em;" value="66">
+          </div>
+          <div class="lbl-input">
+            <label for="uf">UF:</label>
+            <select name="estado" id="estado" style="width: 10em;" disabled> 
+              <option value="SP">SP</option>
+            </select>
+          </div>
+        </fieldset>
+  
+        <button class="btn" type="submit" name="submit">Salvar Alterações</button>
+      </form>
     </div>
     <div class="card-footer">
       

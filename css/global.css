@@ -206,9 +206,9 @@ fieldset.group .lbl-input {
 
 .lbl-input input[type="text"],
 .lbl-input input[type="url"],
+.lbl-input input[type="number"],
 .lbl-input input[type="date"],
-.lbl-input select,
-.lbl-input textarea {
+.lbl-input select{
     padding: 0.2em;
     border: 1px solid #CCC;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
