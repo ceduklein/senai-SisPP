@@ -1,0 +1,9 @@
+.filter {
+  margin-bottom: 20px;
+  position:relative;
+  float: right; 
+}
+
+.filter  a {
+  text-decoration: none;
+}

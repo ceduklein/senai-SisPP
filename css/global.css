@@ -40,6 +40,7 @@ body {
 
 .navBar #nav-last-item {
   float: right;
+  cursor: pointer;
 }
 
 /*Dropdown*/
@@ -160,6 +161,7 @@ body {
 .modal-footer{
   background-color: #ccc;
 }
+
 .btn {
   font-size: 15px;
   background-color: rgb(37, 37, 39);
@@ -204,10 +206,7 @@ fieldset.group .lbl-input {
   clear: both;
 }
 
-.lbl-input input[type="text"],
-.lbl-input input[type="url"],
-.lbl-input input[type="number"],
-.lbl-input input[type="date"],
+.lbl-input input,
 .lbl-input select{
     padding: 0.2em;
     border: 1px solid #CCC;
@@ -229,6 +228,67 @@ fieldset.group .lbl-input {
   color: #000;
   display: inline-block;
   margin-right: 1em;
+}
+
+.tbl {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tbl td, .tbl th {
+  padding: 15px 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.tbl th {
+  background-color: #ececec;
+
+  font-size: 1.1em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.tbl tr:nth-child(even) {
+  background-color: #f7f7f7;
+}
+
+.tbl tr:hover {
+  background-color: #faffcc;
+}
+
+.btn-tbl-edit {
+  font-size: 12px;
+  background-color: rgb(97, 99, 100);
+  padding: 5px 5px 5px 5px;
+  border: 2px solid rgb(37, 37, 39);
+  cursor: pointer;
+  transition: background .4s;
+  border-radius: 5px;
+  margin-left: auto;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-tbl-edit:hover {
+  background-color: rgb(24, 139, 233);
+}
+
+.btn-tbl-del {
+  font-size: 12px;
+  background-color: rgb(207, 21, 21);
+  padding: 4px 4px 4px 4px;
+  border: 2px solid rgb(37, 37, 39);
+  cursor: pointer;
+  transition: background .4s;
+  border-radius: 5px;
+  margin-left: auto;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-tbl-del:hover {
+  background-color: rgb(24, 139, 233);
 }
 
 footer {

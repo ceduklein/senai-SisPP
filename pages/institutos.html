@@ -41,13 +41,56 @@
       <h2>Institutos Cadastrados</h2>
     </div>
     <div class="card-body">
-
+      <table class="tbl">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>10503</td>
+            <td>Instituto 1</td>
+            <td>
+              <a class="btn-tbl-edit" href="./cadastroInstituto.html">Editar</a> |
+              <a class="btn-tbl-del" onclick="openModal('modal-del')">Excluir</a>
+            </td>
+          </tr>
+          <tr>
+            <td>11777</td>
+            <td>Instituto 2</td>
+            <td>
+              <a class="btn-tbl-edit" href="#">Editar</a> |
+              <a class="btn-tbl-del" href="#">Excluir</a>
+            </td>
+          </tr>
+          <tr>
+            <td>11789</td>
+            <td>Instituto 3</td>
+            <td>
+              <a class="btn-tbl-edit" href="#">Editar</a> |
+              <a class="btn-tbl-del" href="#">Excluir</a>
+            </td>
+          </tr>
+          <tr>
+            <td>11845</td>
+            <td>Instituto 4</td>
+            <td>
+              <a class="btn-tbl-edit" href="#">Editar</a> |
+              <a class="btn-tbl-del" href="#">Excluir</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
     <div class="card-footer">
       
     </div>
   </div>
 
+  <!-- Modal Equipe -->
   <div id="div-modal" class="modal">
     <div class="modal-content">
       <div class="modal-header">
@@ -77,6 +120,22 @@
       </div>
     </div>
   </div>
+
+    <!-- Modal Exclusão -->
+    <div id="modal-del" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 style="color: red;">Atenção!</h2>
+        </div>
+        <div class="modal-body">
+          Deseja excluir o cadastro deste instituto?
+        </div>
+        <div class="modal-footer">
+          <button class="btn-tbl-del" onclick="closeModal('modal-del')">Sim</button>
+          <button class="btn-tbl-edit" onclick="closeModal('modal-del')">Não</button>
+        </div>
+      </div>
+    </div>
 
   <footer>
     <h3>Equipe 7 - SisPP - Sistema de Pesquisas Presidenciais</h3>

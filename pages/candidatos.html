@@ -40,14 +40,69 @@
     <div class="card-header">
       <h2>Candidatos Cadastrados</h2>
     </div>
+
     <div class="card-body">
-      
+      <table class="tbl">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>Partido</th>
+            <th>Número</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>00421</td>
+            <td>Candidato 1</td>
+            <td>ABC</td>
+            <td>66</td>
+            <td>
+              <a class="btn-tbl-edit" href="./cadastroCandidato.html">Editar</a> |
+              <a class="btn-tbl-del" onclick="openModal('modal-del')">Excluir</a>
+            </td>
+          </tr>
+          <tr>
+            <td>00429</td>
+            <td>Candidato 2</td>
+            <td>MMA</td>
+            <td>51</td>
+            <td>
+              <a class="btn-tbl-edit" href="#">Editar</a> |
+              <a class="btn-tbl-del" href="#">Excluir</a>
+            </td>
+          </tr>
+          <tr>
+            <td>00477</td>
+            <td>Candidato 3</td>
+            <td>XYZ</td>
+            <td>99</td>
+            <td>
+              <a class="btn-tbl-edit" href="#">Editar</a> |
+              <a class="btn-tbl-del" href="#">Excluir</a>
+            </td>
+          </tr>
+          <tr>
+            <td>00171</td>
+            <td>Candidato 4</td>
+            <td>SPC</td>
+            <td>71</td>
+            <td>
+              <a class="btn-tbl-edit" href="#">Editar</a> |
+              <a class="btn-tbl-del" href="#">Excluir</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
+
     <div class="card-footer">
       
     </div>
   </div>
 
+  <!-- Modal Equipe -->
   <div id="div-modal" class="modal">
     <div class="modal-content">
       <div class="modal-header">
@@ -74,6 +129,22 @@
       </div>
       <div class="modal-footer">
         <button class="btn" onclick="closeModal('div-modal')">Fechar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Exclusão -->
+  <div id="modal-del" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 style="color: red;">Atenção!</h2>
+      </div>
+      <div class="modal-body">
+        Deseja excluir o cadastro deste candidato?
+      </div>
+      <div class="modal-footer">
+        <button class="btn-tbl-del" onclick="closeModal('modal-del')">Sim</button>
+        <button class="btn-tbl-edit" onclick="closeModal('modal-del')">Não</button>
       </div>
     </div>
   </div>

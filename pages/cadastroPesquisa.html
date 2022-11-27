@@ -40,14 +40,92 @@
     <div class="card-header">
       <h2>Pesquisa Exemplo</h2>
     </div>
+
     <div class="card-body">
-      
+      <form action="#">
+        <fieldset class="group">
+          <div class="lbl-input">
+            <label for="id">Id</label>
+            <input type="text" name="id" id="id" style="width: 5em;" value="100551" disabled>
+          </div>
+          <div class="lbl-input">
+            <label for="instituto">Instituto</label>
+            <select name="instituto" id="instituto" style="width: 39em;" disabled>
+              <option value="">--</option>
+              <option selected value="Instituto 1">Instituto 1</option>
+              <option value="Instituto 2">Instituto 2</option>
+              <option value="Instituto 3">Instituto 3</option>
+              <option value="Instituto 4">Instituto 4</option>
+            </select>            
+          </div>
+          <div class="lbl-input">
+            <label for="data">Data da Pesquisa</label>
+            <input type="text" name="data" id="data" style="width: 10em;" value="10/08/2022">
+          </div>
+        </fieldset>
+
+        <fieldset class="group">
+          <div class="lbl-input">
+            <label for="total">Total de Entrevistados</label>
+            <input type="text" name="total" id="total" style="width: 15em;" value="1900">
+          </div>
+          <div class="lbl-input">
+            <label for="regiao">Região</label>
+            <select id="regiao" style="width: 29em;" disabled>
+              <option value="Sul">Sul</option>
+            </select>            
+          </div>
+          <div class="lbl-input">
+            <label for="uf">UF</label>
+            <select id="uf" style="width: 10em;" disabled>
+              <option value="SC">SC</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <fieldset class="group">
+          <div class="lbl-input">
+            <label for="brancos">Votos Brancos</label>
+            <input type="text" name="brancos" id="brancos" style="width: 18em;" value="100">
+          </div>
+          <div class="lbl-input">
+            <label for="nulos">Votos Nulos</label>
+            <input type="text" name="nulos" id="nulos" style="width: 18em;" value="40">
+          </div>
+          <div class="lbl-input">
+            <label for="indecisos">Indecisos</label>
+            <input type="text" name="indecisos" id="indecisos" style="width: 18em;" value="260">
+          </div>
+        </fieldset>
+
+        <fieldset class="group">
+          <div class="lbl-input">
+            <label for="candidato1">Candidato 1</label>
+            <input type="text" name="candidato1" id="candidato1" style="width: 13em;" value="400">
+          </div>
+          <div class="lbl-input">
+            <label for="candidato2">Candidato 2</label>
+            <input type="text" name="candidato2" id="candidato2" style="width: 13em;" value="500">
+          </div>
+          <div class="lbl-input">
+            <label for="candidadto3">Candidato 3</label>
+            <input type="text" name="candidadto3" id="candidadto3" style="width: 13em;" value="320">
+          </div>
+          <div class="lbl-input">
+            <label for="candidato4">Candidato 4</label>
+            <input type="text" name="candidato4" id="candidato4" style="width: 14em;" value="280">
+          </div>
+        </fieldset>
+        
+        <button class="btn" onclick="save('data')">Salvar</button>
+      </form>
     </div>
     <div class="card-footer">
       
     </div>
   </div>
 
+  <!-- Modal Equipe -->
   <div id="div-modal" class="modal">
     <div class="modal-content">
       <div class="modal-header">
