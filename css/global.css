@@ -176,6 +176,61 @@ body {
   background-color: rgb(24, 139, 233);
 }
 
+.lbl-input {
+  margin-bottom: 1em;
+}
+
+.lbl-input {
+  margin-bottom: 0.2em;
+  color: #666;
+  display: block;
+}
+
+fieldset {
+  border: 0;
+}
+
+fieldset.group .lbl-input {
+  float: left;
+  margin-right: 1em;
+}
+
+.group:before, .group:after {
+  content: " ";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.lbl-input input[type="text"],
+.lbl-input input[type="url"],
+.lbl-input input[type="date"],
+.lbl-input select,
+.lbl-input textarea {
+    padding: 0.2em;
+    border: 1px solid #CCC;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display: block;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.lbl-input select option {
+    padding-right: 1em;
+}
+
+.lbl-input input:focus, .lbl-input select:focus, .lbl-input textarea:focus {
+    background: #FFC;
+}
+
+.lbl-input label.checkbox {
+  color: #000;
+  display: inline-block;
+  margin-right: 1em;
+}
+
 footer {
   position: absolute;
   bottom: 0;
