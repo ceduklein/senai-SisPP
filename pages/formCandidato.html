@@ -2,141 +2,143 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../css/global.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>SisPP</title>
 </head>
 <body>
-  
-  <nav class="navBar">
-    <ul>
-        <li><a href="./index.html">Home</a></li>
-        <li>
-          <a href="./candidatos.html">Candidatos</a>
-          <ul>
-              <li><a href="./formCandidato.html">Cadastrar</a></li>
-              <li><a href="./candidatos.html">Listar</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="./institutos.html">Institutos</a>
-          <ul>
-            <li><a href="./formInstituto.html">Cadastrar</a></li>
-            <li><a href="./institutos.html">Listar</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="./pesquisas.html">Pesquisas</a>
-          <ul>
-            <li><a href="./formPesquisa.html">Cadastrar</a></li>
-            <li><a href="./pesquisas.html">Listar</a></li>
-          </ul>
-        </li>
-        <li><a onclick="openModal('div-modal')" id="nav-last-item">Equipe</a></li>
-    </ul>
-  </nav>
+  <div class="container">
+    <nav class="navBar">
+      <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li>
+            <a href="./candidatos.html">Candidatos</a>
+            <ul>
+                <li><a href="./formCandidato.html">Cadastrar</a></li>
+                <li><a href="./candidatos.html">Listar</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="./institutos.html">Institutos</a>
+            <ul>
+              <li><a href="./formInstituto.html">Cadastrar</a></li>
+              <li><a href="./institutos.html">Listar</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="./pesquisas.html">Pesquisas</a>
+            <ul>
+              <li><a href="./formPesquisa.html">Cadastrar</a></li>
+              <li><a href="./pesquisas.html">Listar</a></li>
+            </ul>
+          </li>
+          <li><a onclick="openModal('div-modal')" id="nav-last-item">Equipe</a></li>
+      </ul>
+    </nav>
 
-  <div class="card">
-    <div class="card-header">
-      <h2>Cadastrar Candidato</h2>
+    <div class="card">
+      <div class="card-header">
+        <h2>Cadastrar Candidato</h2>
+      </div>
+
+      <div class="card-body">
+        <form action="#">
+          <fieldset class="group">
+            <div class="lbl-input">
+              <label for="nome">Nome</label>
+              <input type="text" name="nome" id="nome" style="width: 100%;">
+            </div>
+          </fieldset>
+          <fieldset class="group">
+            <div class="lbl-input">
+              <label for="sigla">Sigla Partido:</label>
+              <input type="text" name="sigla" id="sigla" style="width: 100%;">
+            </div>
+            <div class="lbl-input">
+              <label for="numero">Número:</label>
+              <input type="text" name="numero" id="numero" style="width: 100%;">
+            </div>
+            <div class="lbl-input">
+              <label for="uf">UF:</label>
+              <select name="estado" id="estado" style="width: 100%;">
+                <option value="">--</option>
+                <option value="AC">AC</option>
+                <option value="AL">AL</option>
+                <option value="AP">AP</option>
+                <option value="AM">AM</option>
+                <option value="BA">BA</option>
+                <option value="CE">CE</option>
+                <option value="DF">DF</option>
+                <option value="ES">ES</option>
+                <option value="GO">GO</option>
+                <option value="MA">MA</option>
+                <option value="MT">MT</option>
+                <option value="MS">MS</option>
+                <option value="MG">MG</option>
+                <option value="PA">PA</option>
+                <option value="PB">PB</option>
+                <option value="PR">PR</option>
+                <option value="PE">PE</option>
+                <option value="PI">PI</option>
+                <option value="RJ">RJ</option>
+                <option value="RN">RN</option>
+                <option value="RS">RS</option>
+                <option value="RO">RO</option>
+                <option value="RR">RR</option>
+                <option value="SC">SC</option>
+                <option value="SE">SE</option>
+                <option value="SP">SP</option>
+                <option value="TO">TO</option>
+              </select>
+            </div>
+          </fieldset>
+    
+          <button class="btn" type="submit" name="submit">Salvar</button>
+        </form>
+
+      </div>
+
+      <div class="card-footer">
+        
+      </div>
     </div>
 
-    <div class="card-body">
-      <form action="#">
-        <fieldset class="group">
-          <div class="lbl-input">
-            <label for="nome">Nome</label>
-            <input type="text" name="nome" id="nome" style="width: 52em;">
-          </div>
-        </fieldset>
-        <fieldset class="group">
-          <div class="lbl-input">
-            <label for="sigla">Sigla Partido:</label>
-            <input type="text" name="sigla" id="sigla" style="width: 20em;">
-          </div>
-          <div class="lbl-input">
-            <label for="numero">Número:</label>
-            <input type="text" name="numero" id="numero" style="width: 20em;">
-          </div>
-          <div class="lbl-input">
-            <label for="uf">UF:</label>
-            <select name="estado" id="estado" style="width: 10em;">
-              <option value="">--</option>
-              <option value="AC">AC</option>
-              <option value="AL">AL</option>
-              <option value="AP">AP</option>
-              <option value="AM">AM</option>
-              <option value="BA">BA</option>
-              <option value="CE">CE</option>
-              <option value="DF">DF</option>
-              <option value="ES">ES</option>
-              <option value="GO">GO</option>
-              <option value="MA">MA</option>
-              <option value="MT">MT</option>
-              <option value="MS">MS</option>
-              <option value="MG">MG</option>
-              <option value="PA">PA</option>
-              <option value="PB">PB</option>
-              <option value="PR">PR</option>
-              <option value="PE">PE</option>
-              <option value="PI">PI</option>
-              <option value="RJ">RJ</option>
-              <option value="RN">RN</option>
-              <option value="RS">RS</option>
-              <option value="RO">RO</option>
-              <option value="RR">RR</option>
-              <option value="SC">SC</option>
-              <option value="SE">SE</option>
-              <option value="SP">SP</option>
-              <option value="TO">TO</option>
-            </select>
-          </div>
-        </fieldset>
-  
-        <button class="btn" type="submit" name="submit">Salvar</button>
-      </form>
-
+    <!-- Modal Equipe -->
+    <div id="div-modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Equipe 07</h2>
+        </div>
+        <div class="modal-body">
+          <ul>
+            <li>
+              <a href="https://github.com/andredcunha?tab=repositories" target="_blank">
+                <i class="fa fa-github"></i>André Cunha
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/ceduklein?tab=repositories" target="_blank">
+                <i class="fa fa-github"></i>Carlos Klein
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/fhkwmk?tab=repositories" target="_blank">
+                <i class="fa fa-github"></i>Fabiano Henrique
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button class="btn" onclick="closeModal('div-modal')">Fechar</button>
+        </div>
+      </div>
     </div>
 
-    <div class="card-footer">
-      
-    </div>
+    <footer>
+      <h3>Equipe 7 - SisPP - Sistema de Pesquisas Presidenciais  - Contato: (48) 3234-5678</h3>
+    </footer>
   </div>
-
-  <!-- Modal Equipe -->
-  <div id="div-modal" class="modal">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h2>Equipe 07</h2>
-      </div>
-      <div class="modal-body">
-        <ul>
-          <li>
-            <a href="https://github.com/andredcunha?tab=repositories" target="_blank">
-              <i class="fa fa-github"></i>André Cunha
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/ceduklein?tab=repositories" target="_blank">
-              <i class="fa fa-github"></i>Carlos Klein
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/fhkwmk?tab=repositories" target="_blank">
-              <i class="fa fa-github"></i>Fabiano Henrique
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="modal-footer">
-        <button class="btn" onclick="closeModal('div-modal')">Fechar</button>
-      </div>
-    </div>
-  </div>
-
-  <footer>
-    <h3>Equipe 7 - SisPP - Sistema de Pesquisas Presidenciais</h3>
-  </footer>
 
   <script src="../script/global.js"></script>
 </body>

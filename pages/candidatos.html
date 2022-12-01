@@ -2,156 +2,159 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../css/global.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>SisPP</title>
 </head>
 <body>
+  <div class="container">
   
-  <nav class="navBar">
-    <ul>
-        <li><a href="./index.html">Home</a></li>
-        <li>
-          <a href="./candidatos.html">Candidatos</a>
-          <ul>
-              <li><a href="./formCandidato.html">Cadastrar</a></li>
-              <li><a href="./candidatos.html">Listar</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="./institutos.html">Institutos</a>
-          <ul>
-            <li><a href="./formInstituto.html">Cadastrar</a></li>
-            <li><a href="./institutos.html">Listar</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="./pesquisas.html">Pesquisas</a>
-          <ul>
-            <li><a href="./formPesquisa.html">Cadastrar</a></li>
-            <li><a href="./pesquisas.html">Listar</a></li>
-          </ul>
-        </li>
-        <li><a onclick="openModal('div-modal')" id="nav-last-item">Equipe</a></li>
-    </ul>
-  </nav>
-
-  <div class="card">
-    <div class="card-header">
-      <h2>Candidatos Cadastrados</h2>
-    </div>
-
-    <div class="card-body">
-      <table class="tbl">
-        <thead>
-          <tr>
-            <th>Id</th>
-            <th>Nome</th>
-            <th>Partido</th>
-            <th>Número</th>
-            <th>Ações</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>00421</td>
-            <td>Candidato 1</td>
-            <td>ABC</td>
-            <td>66</td>
-            <td>
-              <a class="btn-tbl-edit" href="./cadastroCandidato.html">Editar</a> |
-              <a class="btn-tbl-del" onclick="openModal('modal-del')">Excluir</a>
-            </td>
-          </tr>
-          <tr>
-            <td>00429</td>
-            <td>Candidato 2</td>
-            <td>MMA</td>
-            <td>51</td>
-            <td>
-              <a class="btn-tbl-edit" href="#">Editar</a> |
-              <a class="btn-tbl-del" href="#">Excluir</a>
-            </td>
-          </tr>
-          <tr>
-            <td>00477</td>
-            <td>Candidato 3</td>
-            <td>XYZ</td>
-            <td>99</td>
-            <td>
-              <a class="btn-tbl-edit" href="#">Editar</a> |
-              <a class="btn-tbl-del" href="#">Excluir</a>
-            </td>
-          </tr>
-          <tr>
-            <td>00171</td>
-            <td>Candidato 4</td>
-            <td>SPC</td>
-            <td>71</td>
-            <td>
-              <a class="btn-tbl-edit" href="#">Editar</a> |
-              <a class="btn-tbl-del" href="#">Excluir</a>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="card-footer">
-      
-    </div>
-  </div>
-
-  <!-- Modal Equipe -->
-  <div id="div-modal" class="modal">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h2>Equipe 07</h2>
-      </div>
-      <div class="modal-body">
-        <ul>
+    <nav class="navBar">
+      <ul>
+          <li><a href="./index.html">Home</a></li>
           <li>
-            <a href="https://github.com/andredcunha?tab=repositories" target="_blank">
-              <i class="fa fa-github"></i>André Cunha
-            </a>
+            <a href="./candidatos.html">Candidatos</a>
+            <ul>
+                <li><a href="./formCandidato.html">Cadastrar</a></li>
+                <li><a href="./candidatos.html">Listar</a></li>
+            </ul>
           </li>
           <li>
-            <a href="https://github.com/ceduklein?tab=repositories" target="_blank">
-              <i class="fa fa-github"></i>Carlos Klein
-            </a>
+            <a href="./institutos.html">Institutos</a>
+            <ul>
+              <li><a href="./formInstituto.html">Cadastrar</a></li>
+              <li><a href="./institutos.html">Listar</a></li>
+            </ul>
           </li>
           <li>
-            <a href="https://github.com/fhkwmk?tab=repositories" target="_blank">
-              <i class="fa fa-github"></i>Fabiano Henrique
-            </a>
+            <a href="./pesquisas.html">Pesquisas</a>
+            <ul>
+              <li><a href="./formPesquisa.html">Cadastrar</a></li>
+              <li><a href="./pesquisas.html">Listar</a></li>
+            </ul>
           </li>
-        </ul>
+          <li><a onclick="openModal('div-modal')" id="nav-last-item">Equipe</a></li>
+      </ul>
+    </nav>
+
+    <div class="card">
+      <div class="card-header">
+        <h2>Candidatos Cadastrados</h2>
       </div>
-      <div class="modal-footer">
-        <button class="btn" onclick="closeModal('div-modal')">Fechar</button>
+
+      <div class="card-body">
+        <table class="tbl">
+          <thead>
+            <tr>
+              <th>Id</th>
+              <th>Nome</th>
+              <th>Partido</th>
+              <th>Número</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>00421</td>
+              <td>Candidato 1</td>
+              <td>ABC</td>
+              <td>66</td>
+              <td>
+                <a class="btn-tbl-edit" href="./cadastroCandidato.html">Editar</a> |
+                <a class="btn-tbl-del" onclick="openModal('modal-del')">Excluir</a>
+              </td>
+            </tr>
+            <tr>
+              <td>00429</td>
+              <td>Candidato 2</td>
+              <td>MMA</td>
+              <td>51</td>
+              <td>
+                <a class="btn-tbl-edit" href="#">Editar</a> |
+                <a class="btn-tbl-del" onclick="openModal('modal-del')">Excluir</a>
+              </td>
+            </tr>
+            <tr>
+              <td>00477</td>
+              <td>Candidato 3</td>
+              <td>XYZ</td>
+              <td>99</td>
+              <td>
+                <a class="btn-tbl-edit" href="#">Editar</a> |
+                <a class="btn-tbl-del" onclick="openModal('modal-del')">Excluir</a>
+              </td>
+            </tr>
+            <tr>
+              <td>00171</td>
+              <td>Candidato 4</td>
+              <td>SPC</td>
+              <td>71</td>
+              <td>
+                <a class="btn-tbl-edit" href="#">Editar</a> |
+                <a class="btn-tbl-del" href="#">Excluir</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card-footer">
+        
       </div>
     </div>
-  </div>
 
-  <!-- Modal Exclusão -->
-  <div id="modal-del" class="modal">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h2 style="color: red;">Atenção!</h2>
-      </div>
-      <div class="modal-body">
-        Deseja excluir o cadastro deste candidato?
-      </div>
-      <div class="modal-footer">
-        <button class="btn-tbl-del" onclick="closeModal('modal-del')">Sim</button>
-        <button class="btn-tbl-edit" onclick="closeModal('modal-del')">Não</button>
+    <!-- Modal Equipe -->
+    <div id="div-modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Equipe 07</h2>
+        </div>
+        <div class="modal-body">
+          <ul>
+            <li>
+              <a href="https://github.com/andredcunha?tab=repositories" target="_blank">
+                <i class="fa fa-github"></i>André Cunha
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/ceduklein?tab=repositories" target="_blank">
+                <i class="fa fa-github"></i>Carlos Klein
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/fhkwmk?tab=repositories" target="_blank">
+                <i class="fa fa-github"></i>Fabiano Henrique
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button class="btn" onclick="closeModal('div-modal')">Fechar</button>
+        </div>
       </div>
     </div>
-  </div>
 
-  <footer>
-    <h3>Equipe 7 - SisPP - Sistema de Pesquisas Presidenciais</h3>
-  </footer>
+    <!-- Modal Exclusão -->
+    <div id="modal-del" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 style="color: red;">Atenção!</h2>
+        </div>
+        <div class="modal-body">
+          Deseja excluir o cadastro deste candidato?
+        </div>
+        <div class="modal-footer">
+          <button class="btn-tbl-del" onclick="closeModal('modal-del')">Sim</button>
+          <button class="btn-tbl-edit" onclick="closeModal('modal-del')">Não</button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <h3>Equipe 7 - SisPP - Sistema de Pesquisas Presidenciais - Contato: (48) 3234-5678</h3>
+    </footer>
+  </div>
 
   <script src="../script/global.js"></script>
 </body>

@@ -2,222 +2,224 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../css/global.css">
   <link rel="stylesheet" href="../css/pesquisas.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>SisPP</title>
 </head>
 <body onload="loadRegiao('regiao'), loadUF('uf')">
-  
-  <nav class="navBar">
-    <ul>
-        <li><a href="./index.html">Home</a></li>
-        <li>
-          <a href="./candidatos.html">Candidatos</a>
-          <ul>
-              <li><a href="./formCandidato.html">Cadastrar</a></li>
-              <li><a href="./candidatos.html">Listar</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="./institutos.html">Institutos</a>
-          <ul>
-            <li><a href="./formInstituto.html">Cadastrar</a></li>
-            <li><a href="./institutos.html">Listar</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="./pesquisas.html">Pesquisas</a>
-          <ul>
-            <li><a href="./formPesquisa.html">Cadastrar</a></li>
-            <li><a href="./pesquisas.html">Listar</a></li>
-          </ul>
-        </li>
-        <li><a onclick="openModal('div-modal')" id="nav-last-item">Equipe</a></li>
-    </ul>
-  </nav>
-
-  <div class="card">
-    <div class="card-header">
-      <h2>Pesquisas Realizadas</h2>
-    </div>
-
-    <div class="card-body">
-      <div class="filter">
-        <a class="btn" onclick="openModal('modal-filter')">Filtros</a>
-      </div>
-      <table class="tbl">
-        <thead>
-          <tr>
-            <th>Id</th>
-            <th>Instituto</th>
-            <th>Data</th>
-            <th>Região</th>
-            <th>UF</th>
-            <th>Ações</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>100551</td>
-            <td>Instituto 1</td>
-            <td>10/08/2022</td>
-            <td>Sul</td>
-            <td>SC</td>
-            <td>
-              <a class="btn-tbl-edit" href="./cadastroPesquisa.html">Editar</a> |
-              <a class="btn-tbl-del" onclick="openModal('modal-del')">Excluir</a>
-            </td>
-          </tr>
-          <tr>
-            <td>100552</td>
-            <td>Instituto 2</td>
-            <td>15/08/2022</td>
-            <td>Sudeste</td>
-            <td>RJ</td>
-            <td>
-              <a class="btn-tbl-edit" href="#">Editar</a> |
-              <a class="btn-tbl-del" href="#">Excluir</a>
-            </td>
-          </tr>
-          <tr>
-            <td>100553</td>
-            <td>Instituto 3</td>
-            <td>25/08/2022</td>
-            <td>Norte</td>
-            <td>AM</td>
-            <td>
-              <a class="btn-tbl-edit" href="#">Editar</a> |
-              <a class="btn-tbl-del" href="#">Excluir</a>
-            </td>
-          </tr>
-          <tr>
-            <td>100555</td>
-            <td>Instituto 4</td>
-            <td>15/09/2022</td>
-            <td>Nordeste</td>
-            <td>PE</td>
-            <td>
-              <a class="btn-tbl-edit" href="#">Editar</a> |
-              <a class="btn-tbl-del" href="#">Excluir</a>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="card-footer">
-      
-    </div>
-  </div>
-
-  <!-- Modal Equipe -->
-  <div id="div-modal" class="modal">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h2>Equipe 07</h2>
-      </div>
-      <div class="modal-body">
-        <ul>
+  <div class="container">
+    <nav class="navBar">
+      <ul>
+          <li><a href="./index.html">Home</a></li>
           <li>
-            <a href="https://github.com/andredcunha?tab=repositories" target="_blank">
-              <i class="fa fa-github"></i>André Cunha
-            </a>
+            <a href="./candidatos.html">Candidatos</a>
+            <ul>
+                <li><a href="./formCandidato.html">Cadastrar</a></li>
+                <li><a href="./candidatos.html">Listar</a></li>
+            </ul>
           </li>
           <li>
-            <a href="https://github.com/ceduklein?tab=repositories" target="_blank">
-              <i class="fa fa-github"></i>Carlos Klein
-            </a>
+            <a href="./institutos.html">Institutos</a>
+            <ul>
+              <li><a href="./formInstituto.html">Cadastrar</a></li>
+              <li><a href="./institutos.html">Listar</a></li>
+            </ul>
           </li>
           <li>
-            <a href="https://github.com/fhkwmk?tab=repositories" target="_blank">
-              <i class="fa fa-github"></i>Fabiano Henrique
-            </a>
+            <a href="./pesquisas.html">Pesquisas</a>
+            <ul>
+              <li><a href="./formPesquisa.html">Cadastrar</a></li>
+              <li><a href="./pesquisas.html">Listar</a></li>
+            </ul>
           </li>
-        </ul>
+          <li><a onclick="openModal('div-modal')" id="nav-last-item">Equipe</a></li>
+      </ul>
+    </nav>
+
+    <div class="card">
+      <div class="card-header">
+        <h2>Pesquisas Realizadas</h2>
       </div>
-      <div class="modal-footer">
-        <button class="btn" onclick="closeModal('div-modal')">Fechar</button>
+
+      <div class="card-body">
+        <div class="filter">
+          <a class="btn" onclick="openModal('modal-filter')">Filtros</a>
+        </div>
+        <table class="tbl">
+          <thead>
+            <tr>
+              <th>Id</th>
+              <th>Instituto</th>
+              <th>Data</th>
+              <th>Região</th>
+              <th>UF</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>100551</td>
+              <td>Instituto 1</td>
+              <td>10/08/2022</td>
+              <td>Sul</td>
+              <td>SC</td>
+              <td>
+                <a class="btn-tbl-edit" href="./cadastroPesquisa.html">Editar</a> |
+                <a class="btn-tbl-del" onclick="openModal('modal-del')">Excluir</a>
+              </td>
+            </tr>
+            <tr>
+              <td>100552</td>
+              <td>Instituto 2</td>
+              <td>15/08/2022</td>
+              <td>Sudeste</td>
+              <td>RJ</td>
+              <td>
+                <a class="btn-tbl-edit" href="#">Editar</a> |
+                <a class="btn-tbl-del" onclick="openModal('modal-del')">Excluir</a>
+              </td>
+            </tr>
+            <tr>
+              <td>100553</td>
+              <td>Instituto 3</td>
+              <td>25/08/2022</td>
+              <td>Norte</td>
+              <td>AM</td>
+              <td>
+                <a class="btn-tbl-edit" href="#">Editar</a> |
+                <a class="btn-tbl-del" onclick="openModal('modal-del')">Excluir</a>
+              </td>
+            </tr>
+            <tr>
+              <td>100555</td>
+              <td>Instituto 4</td>
+              <td>15/09/2022</td>
+              <td>Nordeste</td>
+              <td>PE</td>
+              <td>
+                <a class="btn-tbl-edit" href="#">Editar</a> |
+                <a class="btn-tbl-del" onclick="openModal('modal-del')">Excluir</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="card-footer">
+        
       </div>
     </div>
-  </div>
 
-  <!-- Modal Exclusão -->
-  <div id="modal-del" class="modal">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h2 style="color: red;">Atenção!</h2>
-      </div>
-      <div class="modal-body">
-        Deseja excluir esta pesquisa?
-      </div>
-      <div class="modal-footer">
-        <button class="btn-tbl-del" onclick="closeModal('modal-del')">Sim</button>
-        <button class="btn-tbl-edit" onclick="closeModal('modal-del')">Não</button>
+    <!-- Modal Equipe -->
+    <div id="div-modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Equipe 07</h2>
+        </div>
+        <div class="modal-body">
+          <ul>
+            <li>
+              <a href="https://github.com/andredcunha?tab=repositories" target="_blank">
+                <i class="fa fa-github"></i>André Cunha
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/ceduklein?tab=repositories" target="_blank">
+                <i class="fa fa-github"></i>Carlos Klein
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/fhkwmk?tab=repositories" target="_blank">
+                <i class="fa fa-github"></i>Fabiano Henrique
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button class="btn" onclick="closeModal('div-modal')">Fechar</button>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- Modal Filtros -->
-  <div id="modal-filter" class="modal" onload="">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h2>Filtros</h2>
-      </div>
-      <div class="modal-body">
-        <form action="#">
-          <fieldset class="group">
-            <div class="lbl-input">
-              <label for="dataInicio">De</label>
-              <input type="date" name="dataInicio" id="dataInicio" style="width: 10em;">
-            </div>
-            <div class="lbl-input">
-              <label for="dataFim">Até</label>
-              <input type="date" name="dataFim" id="dataFim" style="width: 10em;">
-            </div>
-            <div class="lbl-input">
-              <label for="candidato">Candidato</label>
-              <select name="candidato" id="candidato" style="width: 15em;">
-                <option value="">--</option>
-                <option value="Candidato 1">Candidato 1</option>
-                <option value="Candidato 2">Candidato 2</option>
-                <option value="Candidato 3">Candidato 3</option>
-                <option value="Candidato 4">Candidato 4</option>
-              </select>            
-            </div>
-          </fieldset>
-          
-          <fieldset class="group">
-            <div class="lbl-input">
-              <label for="regiao">Região</label>
-              <select name="regiao" id="regiao" style="width: 10em;"></select>
-            </div>
-            <div class="lbl-input">
-              <label for="uf">UF</label>
-              <select id="uf" style="width: 10em;"></select>
-            </div>
-            <div class="lbl-input">
-              <label for="instituto">Instituto</label>
-              <select name="instituto" id="instituto" style="width: 15em;">
-                <option value="">--</option>
-                <option value="Instituto 1">Instituto 1</option>
-                <option value="Instituto 2">Instituto 2</option>
-                <option value="Instituto 3">Instituto 3</option>
-                <option value="Instituto 4">Instituto 4</option>
-              </select>            
-            </div>
-          </fieldset>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button class="btn-tbl-edit" onclick="closeModal('modal-filter')">Aplicar Filtros</button>
-        <button class="btn-tbl-del" onclick="closeModal('modal-filter')">Cancelar</button>
+    <!-- Modal Exclusão -->
+    <div id="modal-del" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 style="color: red;">Atenção!</h2>
+        </div>
+        <div class="modal-body">
+          Deseja excluir esta pesquisa?
+        </div>
+        <div class="modal-footer">
+          <button class="btn-tbl-del" onclick="closeModal('modal-del')">Sim</button>
+          <button class="btn-tbl-edit" onclick="closeModal('modal-del')">Não</button>
+        </div>
       </div>
     </div>
-  </div>
 
-  <footer>
-    <h3>Equipe 7 - SisPP - Sistema de Pesquisas Presidenciais</h3>
-  </footer>
+    <!-- Modal Filtros -->
+    <div id="modal-filter" class="modal" onload="">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Filtros</h2>
+        </div>
+        <div class="modal-body">
+          <form action="#">
+            <fieldset class="group">
+              <div class="lbl-input">
+                <label for="dataInicio">De</label>
+                <input type="date" name="dataInicio" id="dataInicio" style="width: 10em;">
+              </div>
+              <div class="lbl-input">
+                <label for="dataFim">Até</label>
+                <input type="date" name="dataFim" id="dataFim" style="width: 10em;">
+              </div>
+              <div class="lbl-input">
+                <label for="candidato">Candidato</label>
+                <select name="candidato" id="candidato" style="width: 15em;">
+                  <option value="">--</option>
+                  <option value="Candidato 1">Candidato 1</option>
+                  <option value="Candidato 2">Candidato 2</option>
+                  <option value="Candidato 3">Candidato 3</option>
+                  <option value="Candidato 4">Candidato 4</option>
+                </select>            
+              </div>
+            </fieldset>
+            
+            <fieldset class="group">
+              <div class="lbl-input">
+                <label for="regiao">Região</label>
+                <select name="regiao" id="regiao" style="width: 10em;"></select>
+              </div>
+              <div class="lbl-input">
+                <label for="uf">UF</label>
+                <select id="uf" style="width: 10em;"></select>
+              </div>
+              <div class="lbl-input">
+                <label for="instituto">Instituto</label>
+                <select name="instituto" id="instituto" style="width: 15em;">
+                  <option value="">--</option>
+                  <option value="Instituto 1">Instituto 1</option>
+                  <option value="Instituto 2">Instituto 2</option>
+                  <option value="Instituto 3">Instituto 3</option>
+                  <option value="Instituto 4">Instituto 4</option>
+                </select>            
+              </div>
+            </fieldset>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn-tbl-edit" onclick="closeModal('modal-filter')">Aplicar Filtros</button>
+          <button class="btn-tbl-del" onclick="closeModal('modal-filter')">Cancelar</button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <h3>Equipe 7 - SisPP - Sistema de Pesquisas Presidenciais - Contato: (48) 3234-5678</h3>
+    </footer>
+  </div>
 
   <script src="../script/global.js"></script>
 </body>
