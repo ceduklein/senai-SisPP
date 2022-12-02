@@ -34,7 +34,8 @@
               <li><a href="./pesquisas.html">Listar</a></li>
             </ul>
           </li>
-          <li><a onclick="openModal('div-modal')" id="nav-last-item">Equipe</a></li>
+          <li><a class="link-modal" onclick="openModal('div-modal')" id="nav-last-item">Equipe</a></li>
+          <li><a class="link-modal" onclick="openModal('div-contato')" id="nav-last-item">Contato</a></li>
       </ul>
     </nav>
 
@@ -123,21 +124,57 @@
       </div>
     </div>
 
-      <!-- Modal Exclusão -->
-      <div id="modal-del" class="modal">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h2 style="color: red;">Atenção!</h2>
-          </div>
-          <div class="modal-body">
-            Deseja excluir o cadastro deste instituto?
-          </div>
-          <div class="modal-footer">
-            <button class="btn-tbl-del" onclick="closeModal('modal-del')">Sim</button>
-            <button class="btn-tbl-edit" onclick="closeModal('modal-del')">Não</button>
-          </div>
+    <!-- Modal Exclusão -->
+    <div id="modal-del" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 style="color: red;">Atenção!</h2>
+        </div>
+        <div class="modal-body">
+          Deseja excluir o cadastro deste instituto?
+        </div>
+        <div class="modal-footer">
+          <button class="btn-tbl-del" onclick="closeModal('modal-del')">Sim</button>
+          <button class="btn-tbl-edit" onclick="closeModal('modal-del')">Não</button>
         </div>
       </div>
+    </div>
+
+    <!-- Modal Contato -->
+    <div id="div-contato" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Contato</h2>
+        </div>
+        <div class="modal-body">
+            <form action="">
+              <fieldset class="group">
+                <div class="lbl-input">
+                  <label for="nome">Nome:</label>
+                  <input type="text" name="nome" id="nome" style="width: 100%;" placeholder="informe seu nome...">
+                </div>
+              </fieldset>
+              <fieldset class="group">
+                <div class="lbl-input">
+                  <label for="email">Email:</label>
+                  <input type="text" name="email" id="email" placeholder="informe seu e-mail...">
+                </div>
+              </fieldset>
+              <fieldset class="group">
+                <div class="lbl-input">
+                  <label for="msg">Mensagem:</label>
+                  <textarea name="msg" id="msg" style="width: auto;"></textarea>
+                </div>
+              </fieldset>
+            </form>
+        </div>
+        
+        <div class="modal-footer">
+          <button class="btn" onclick="closeModal('div-contato')">Enviar</button>
+          <button class="btn" onclick="closeModal('div-contato')">Fechar</button>
+        </div>
+      </div>
+    </div>
 
     <footer>
       <h3>Equipe 7 - SisPP - Sistema de Pesquisas Presidenciais - Contato: (48) 3234-5678</h3>

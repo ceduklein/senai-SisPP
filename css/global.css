@@ -31,10 +31,6 @@
       display: block;
       border: 1px solid #dad6eb;
   }
-
-  .lbl-input {
-    width: 100%;
-  }
 }
 
 body {
@@ -91,6 +87,7 @@ body {
 
 .navBar ul li:hover ul {
   display: block;
+  
 }
 
 .navBar ul ul {
@@ -99,6 +96,10 @@ body {
 
 .navBar ul ul li a {
   display: block;
+}
+
+.link-modal {
+  cursor: pointer;
 }
 
 .card {
@@ -237,7 +238,8 @@ fieldset.group .lbl-input {
 }
 
 .lbl-input input,
-.lbl-input select{
+.lbl-input select,
+.lbl-input textarea{
     width: 100%;
     padding: 0.2em;
     border: 1px solid #CCC;
@@ -245,6 +247,10 @@ fieldset.group .lbl-input {
     display: block;
     margin-bottom: 20px;
     font-size: 1.1em;
+}
+
+.lbl-input textarea {
+  height: 200px;
 }
 
 .lbl-input select option {
